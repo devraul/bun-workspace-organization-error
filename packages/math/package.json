@@ -1,8 +1,10 @@
 {
   "name": "@monorepo/math",
-  "module": "index.ts",
+  "module": "dist/index.js",
   "type": "module",
+  "types": "dist/src/index.d.ts",
   "scripts": {
+    "prepare": "bun run build",
     "build": "bun run build:lib && bun run build:types",
     "build:lib": "bun build src/index.ts --outdir dist",
     "build:types": "bun tsc"
