@@ -1,0 +1,13 @@
+{
+  "name": "@monorepo/math",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun run build:lib && bun run build:types",
+    "build:lib": "bun build src/index.ts --outdir dist",
+    "build:types": "bun tsc"
+  },
+  "devDependencies": {
+    "typescript": "5.2.2"
+  }
+}

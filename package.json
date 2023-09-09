@@ -2,10 +2,11 @@
   "name": "bun-workspace-error",
   "module": "index.ts",
   "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
-    "bun-types": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+    "bun-types": "1.0.1",
+    "typescript": "5.2.2"
   }
 }
